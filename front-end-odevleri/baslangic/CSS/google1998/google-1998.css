@@ -1,0 +1,66 @@
+body {
+    background-color: white;
+}
+
+#main {
+    width: 100%;
+    height: 100%;
+    margin: auto; 
+}
+
+#search-section {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 0.05%;
+    padding: 1px;
+    text-align: center;
+    background-color: #EEEEEE; 
+}
+
+#nav-section{
+    width: 90%;
+    height: 75px;
+    margin: auto;
+    padding: 1px;
+}
+
+#special-searchs{
+    background-color: #7EE5DA;
+    width: 37%;
+    text-align: center;
+    float: left;
+    margin-right: 0.1%;
+    padding-block: 9px;
+
+}
+
+#google-stuff{
+    background-color: #70CCC2;
+    width:19.3%;
+    font-size: small;
+    text-align: center;
+    float:left;
+    margin-right: 0.1%;
+    padding-block: 6.9px;
+}
+
+#subscribe{
+    background-color: #62B3AA;
+    width: 43.45%;
+    font-size: small;
+    text-align: center;
+    float: right;
+    padding-block: 1px;
+}
+
+#footer{
+    width: 90%;
+    margin: auto;
+    font-size: small;
+    text-align: center;
+}
+
+
+
+
+
