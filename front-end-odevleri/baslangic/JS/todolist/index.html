@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <title>Yapılacaklar Listesi</title>
+  </head>
+  <body> 
+    <div class="row">
+      <div class="container">
+        <div class="header">
+          <img
+            src="https://cdn.sanity.io/images/9kdepi1d/production/65c832d202a503b15d99e628f4313782f3ef50db-300x62.png"
+            class="mb-1 mt-5" style="background-color: white;"
+            alt=""
+          />
+          <h2>Yapılacaklar Listesi</h2>
+          <form action=""  id="taskForm">
+            <div class="input-group px-5 pb-4 "  >
+              <input type="text" class="form-control" id="task" placeholder="Bugün ne yapacaksın?" name="to-do" aria-label="Bugün ne yapacaksın?" aria-describedby="button-addon2">
+              <button class=" button d-grid gap-2 col-3" type="submit" onclick="showToast()" onclick="newElement()" id="liveToastBtn" >Ekle</button>
+            </div>
+          </form>
+        </div>
+
+        <ul class="list-group" id="list">
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            3 Litre Su İç 
+            <button type="button" class="btn delete btn-outline-secondary" aria-label="Close" style="border: 0;"><strong>X</strong></button>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Ödevleri Yap
+            <button type="button" class="btn delete btn-outline-secondary" aria-label="Close" style="border: 0;"><strong>X</strong></button>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            En Az 3 Saat Kodlama Yap
+            <button type="button" class="btn delete btn-outline-secondary" aria-label="Close" style="border: 0;"><strong>X</strong></button>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Yemek Yap
+            <button type="button" class="btn delete btn-outline-secondary" aria-label="Close" style="border: 0;"><strong>X</strong></button>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            50 Sayfa Kitap Oku
+            <button type="button" class="btn delete btn-outline-secondary" aria-label="Close" style="border: 0;"><strong>X</strong></button>
+          </li>
+        </ul>
+
+        <div class="toast" id="toast-container" style="position: fixed; top: 10px; right: 10px; max-width: 600px; width: auto;" role="alert" aria-live="assertive" aria-atomic="true" data-delay="4000">
+          <div class="toast-header d-flex  justify-content-between ">
+            <strong class="mr-5">Not Ekleme Bildirimi</strong>
+            <button type="button" class="ml-5 mb-1 btn-close" data-dismiss="toast" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="toast-body">
+          </div>
+        </div>
+
+        <script
+          src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+          integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+          crossorigin="anonymous"
+        ></script>
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+          crossorigin="anonymous"
+        ></script>
+        <script src="../to-do-list.js"></script>
+      </div>
+    </div>
+  </body>
+</html>
